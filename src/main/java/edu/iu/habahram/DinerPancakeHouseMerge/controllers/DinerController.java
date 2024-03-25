@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/diner")
 public class DinerController {
 
-    DinerRepository repository;
+    DinerRepository repository;//
 
     public DinerController(DinerRepository repository) {
         this.repository = repository;
