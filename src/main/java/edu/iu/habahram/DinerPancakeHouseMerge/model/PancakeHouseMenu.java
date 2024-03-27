@@ -44,7 +44,7 @@ public class PancakeHouseMenu {
 
     public Iterator<MenuItem> createIterator() {
         return new PancakeHouseIterator(menuItems);
-    }
+    }//
 
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

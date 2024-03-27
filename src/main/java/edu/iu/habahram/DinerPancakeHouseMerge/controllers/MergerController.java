@@ -19,7 +19,7 @@ import java.util.List;
 @CrossOrigin
 @RequestMapping("/merger")
 public class MergerController {
-    DinerRepository dinerRepository;
+    DinerRepository dinerRepository;//
     PancakeHouseRepository pancakeHouseRepository;
     public MergerController(DinerRepository diner, PancakeHouseRepository pancake) {
         this.dinerRepository = diner;

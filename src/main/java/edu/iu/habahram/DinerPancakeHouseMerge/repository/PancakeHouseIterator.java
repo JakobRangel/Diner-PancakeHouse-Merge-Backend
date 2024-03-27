@@ -6,7 +6,7 @@ import java.util.List;
 
 public class PancakeHouseIterator implements Iterator<MenuItem> {
     List<MenuItem> items;
-    int position = 0;
+    int position = 0;//
 
     public PancakeHouseIterator(List<MenuItem> items) {
         this.items = items;

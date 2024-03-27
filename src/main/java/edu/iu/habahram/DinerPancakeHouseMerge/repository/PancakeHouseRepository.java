@@ -15,7 +15,7 @@ public class PancakeHouseRepository {
         PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
         Iterator<MenuItem> iterator = pancakeHouseMenu.createIterator();
         List<MenuItem> menuItemsList = new ArrayList<>();
-        while(iterator.hasNext()) {
+        while(iterator.hasNext()) {//
             menuItemsList.add(iterator.next());
         }
         return menuItemsList;
