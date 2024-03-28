@@ -43,7 +43,7 @@ public class PancakeHouseMenu {
     }
 
     public Iterator<MenuItem> createIterator() {
-        return new PancakeHouseIterator(menuItems);
+        return menuItems.iterator();
     }//
 
     public String toString() {
@@ -53,6 +53,4 @@ public class PancakeHouseMenu {
         }
         return  stringBuilder.toString();
     }
-
-    // other menu methods here
 }

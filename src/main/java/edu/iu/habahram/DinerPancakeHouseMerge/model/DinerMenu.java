@@ -1,6 +1,10 @@
 package edu.iu.habahram.DinerPancakeHouseMerge.model;
 
-public class DinerMenu {
+import edu.iu.habahram.DinerPancakeHouseMerge.repository.DinerMenuIterator;
+
+import java.util.Iterator;
+
+public class DinerMenu implements Menu{
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;
@@ -48,5 +52,10 @@ public class DinerMenu {
         return  stringBuilder.toString();
     }
 
-      // other menu methods here
+    @Override
+    public Iterator<MenuItem> createIterator() {
+        return new DinerMenuIterator(menuItems); // Assuming DinerMenuIterator is an implementation of Iterator
+    }
+
+    // other menu methods here
 }

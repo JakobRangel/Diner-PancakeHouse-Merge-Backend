@@ -1,6 +1,8 @@
 package edu.iu.habahram.DinerPancakeHouseMerge.model;
 
-public class MenuItem {
+import java.util.Iterator;
+
+public class MenuItem implements Menu{
     String name;
     String description;
     boolean vegetarian;
@@ -36,4 +38,8 @@ public class MenuItem {
         return (name + ", $" + price + "\n   " + description);
     }
 
+    @Override
+    public Iterator<MenuItem> createIterator() {
+        return null;
+    }
 }
