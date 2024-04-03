@@ -1,9 +1,13 @@
 package edu.iu.habahram.DinerPancakeHouseMerge.model;
 
+import edu.iu.habahram.DinerPancakeHouseMerge.repository.CafeMenuIterator;
+import edu.iu.habahram.DinerPancakeHouseMerge.repository.DinerMenuIterator;
+
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
-public class CafeMenu {
+public class CafeMenu implements Menu{
     HashMap<String, MenuItem> menuItems = new HashMap<String, MenuItem>();
 
     public CafeMenu() {
@@ -30,4 +34,9 @@ public class CafeMenu {
     }
 
 
+    @Override
+    public Iterator<MenuItem> createIterator() {
+        return new CafeMenuIterator(menuItems);
+
+    }
 }
